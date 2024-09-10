@@ -1,0 +1,432 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+nav .nav-list {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+nav .nav-list li {
+    display: inline;
+    margin: 0 10px;
+}
+nav .sidebar li {
+    display: block;
+    margin: 20px;
+}
+
+nav .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding:10px;
+}
+ #menuBtn {
+    color: red;
+    float:right;
+    margin:5px 20px 5px 0;
+}
+
+nav .sidebar li a {
+    color: #333;
+    text-decoration: none;
+    padding:10px;
+}
+nav .nav-list li a:hover {
+    color: #999;
+    border: 1px solid #fff;
+    border-radius:10px;
+    transition: .5s;
+}
+
+nav .sidebar li a:hover {
+    color: #999;
+    border: 1px solid #fff;
+    border-radius:10px;
+    transition: .5s;
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:100%;
+    z-index:999;
+    background-color:#bbb;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content: top;
+}
+
+
+
+
+
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+main .bg-img{
+    background-image: url("images/team.png")
+
+}
+main table {
+    border-collapse:collapse;
+    width: 100%;
+    font-size:0.8em;
+    text-align: center;
+}
+main table th:nth-child(0),td{
+    border: 1px solid #999;
+    border-radius:10px;
+    padding:5px 10px;
+}
+main table tr:hover{
+    background-color:#ddd;
+    transition: .5s;
+}
+
+main .match-box{
+    text-align:center;
+    border: 1px solid #999;
+    border-radius:20px;
+    background-color:#fff;
+    padding-bottom: 20px;
+}
+main .match-box p{
+    font-size: small;
+    color: grey;
+}
+main .match-box a{
+    font-size: small;
+    color: blue;
+    text-decoration:none;
+    padding: 20px;
+}
+main .match-box a:hover{
+    font-size: small;
+    color: navy;
+    background-color:#ggg;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+    transition: .5s;
+}
+main .teams h4,h3{
+    display: inline;
+    padding: 10px 20px;
+    color: #000;
+}
+
+main .teams h3{
+    font-size:2em;
+}
+main .player-img{
+    border-radius: 10px;
+    align-content:center;
+    background-color:#fff;
+}
+main .player-img img,.player-img p{
+    margin-bottom:10px;
+}
+main .player-img img{
+    border-radius: 50%;
+}
+main img {
+    width: 10px;
+    height: 10px;
+}
+main .coach{
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px #000;
+
+}
+main .coach img,.coach p{
+    padding:10px 5px;
+}
+main .field-states{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px #000;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+main .field-states2{
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px #000;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+main .field-states img{
+    width: 50%;
+    height: 303px
+}
+main .field-states2 img{
+    width: 50%;
+    height: 303px
+}
+main .field-states p{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #000;
+    margin: 20px;
+    padding:20px;
+}
+main .field-states2 p{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #000;
+    margin: 20px;
+    padding:20px;
+}
+main .tables{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #000;
+    padding:10px;
+}
+main .tables2{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #000;
+    padding:10px;
+    margin:0 200px;
+}
+
+main .tables2 .home-img{
+    display:block;
+    height:200px;
+    width:400px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .tables2 .home-img2{
+    display:block;
+    height:200px;
+    width:200px;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .tables2 a{
+    text-decoration:none;
+    display:block;
+    padding:20px;
+}
+main .tables2 a:hover{
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background-color:#ddd;
+    transition: .5s;
+}
+main .tables2 .home-a{
+    text-align:center;
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+footer img:hover {
+    width: 60px
+    height:60px
+
+}
+
+@media only screen and (max-width: 920px) {
+    main .tables2{
+    margin:0 20px;
+}
+}
+@media only screen and (max-width: 700px) {
+    main .tables2{
+    margin:0 20px;
+}
+}
+@media only screen and (max-width: 600px) {
+    main .field-states{
+    height: 200px;
+}
+}
+@media only screen and (max-width: 560px) {
+    main{
+        padding:0px 10px;
+    }
+    main .tables, main .tables2{
+        border-radius:0px;
+    }
+    main .tables2{
+    margin:0px;
+}
+}
+@media only screen and (max-width: 500px) {
+    main{
+        padding:0px 10px;
+    }
+    main .tables, main .tables2{
+        border-radius:0px;
+    }
+    main .tables2{
+    margin:0px;
+}
+}
+@media only screen and (max-width: 460px) {
+    main {
+    padding:5px;
+}
+    main .tables2 .home-img{
+    height:150px;
+    width:300px;
+}
+main .tables2 .home-img2{
+    height:150px;
+    width:150px;
+}
+    main .field-states{
+    height:400px;
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+}
+main .field-states2{
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+}
+main .field-states img{
+    height: 400px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .field-states2 img{
+    width: 50%;
+    height: 400px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .field-states p{
+    margin:10px;
+}
+main .field-states2 p{
+    margin:10px;
+}
+    main .field-states .stadium-img{
+    height:150px;
+    width:300px;
+}
+    main .field-states2 .stadium-img{
+    height:150px;
+    width:300px;
+}
+    main #hist-table{
+    display:none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    main .field-states2 .stadium-img{
+    height:120px;
+    width:240px;
+}
+    main .tables2 .home-img{
+    height:120px;
+    width:240px;
+}
+main .tables2 .home-img2{
+    height:140px;
+    width:140px;
+}
+}
+@media only screen and (max-width: 330px) {
+    main{
+    font-size:small;
+    }
+    main .field-states2 .stadium-img{
+    height:110px;
+    width:220px;
+}
+    main .tables2 .home-img{
+    height:110px;
+    width:220px;
+}
+main .tables2 .home-img2{
+    height:110px;
+    width:110px;
+}
+}
+@media only screen and (max-width: 300px) {
+    main{
+    font-size:small;
+    }
+    main .field-states2 .stadium-img{
+    height:90px;
+    width:100%;
+}
+    main .tables2 .home-img{
+    height:90px;
+    width:100%;
+}
+main .tables2 .home-img2{
+    height:90px;
+    width:90px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+    .hideOnMobile{
+    display:none;
+    }
+
+}
+@media only screen and (min-width: 900px) {
+    .hideOnPc{
+    display:none;
+    }
+
+}
+
+
