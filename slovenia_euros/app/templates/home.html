@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="tables2">
+<h1>Welcome to Slovenia in the EUROS 2024</h1>
+<p>Here you can discover more about your favourite team.</p>
+    <div class="home-a">
+<a href="{{ url_for('history') }}"><h3>Slovenia's history in the Euros.</h3>
+<img src="static/images/logo.png" class="home-img2"></a><br>
+<a href="{{ url_for('player') }}"><h3>The players that represented the country in the Euros 2024.</h3>
+<img src="static/images/team.png" class="home-img"></a><br>
+<a href="{{ url_for('fixtures') }}"><h3>The team's matches and highlights.</h3>
+<img src="static/images/pvs.png" class="home-img"></a><br>
+<a href="{{ url_for('group') }}"><h3>The group Table</h3>
+<img src="static/stadium/stadium.png" class="home-img"></a><br>
+</div></div>{% endblock %}
+

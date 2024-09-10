@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <header>
+        <a href="https://www.uefa.com/euro2024/teams/57163--slovenia/"><img src="{{ url_for('static', filename='stadium/SVN.png') }}" alt="Flag" style="width: 50px; height: auto;"></a>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a id="closeBtn" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('history') }}">History</a></li>
+                <li><a href="{{ url_for('player') }}">Players</a></li>
+                <li><a href="{{ url_for('fixtures') }}">Fixtures</a></li>
+                <li><a href="{{ url_for('group') }}">Group Table</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li><a class="hideOnMobile" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="hideOnMobile" href="{{ url_for('history') }}">History</a></li>
+                <li><a class="hideOnMobile" href="{{ url_for('player') }}">Players</a></li>
+                <li><a class="hideOnMobile" href="{{ url_for('fixtures') }}">Fixtures</a></li>
+                <li><a class="hideOnMobile" href="{{ url_for('group') }}">Group Table</a></li>
+                <li onclick=showSidebar()><a class="hideOnPc" id="menuBtn" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <nav style="font-size:small; color:#bbb">
+
+            <ul class="nav-list">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('history') }}">History</a></li>
+                <li><a href="{{ url_for('player') }}">Players</a></li>
+                <li><a href="{{ url_for('fixtures') }}">Fixtures</a></li>
+                <li><a href="{{ url_for('group') }}">Group Table</a></li>
+            </ul>
+        </nav>
+        <p>© 2024 Slovenia EUROS 2024</p>
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo" style="width: 50px; height: auto;">
+    </footer>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+</script>
+</body>
+</html>

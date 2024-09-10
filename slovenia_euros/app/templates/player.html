@@ -1,0 +1,273 @@
+{% extends 'base.html' %}
+
+{% block title %}Players{% endblock %}
+
+{% block content %}
+
+<h1>Squad Information</h1>
+<p>Meet the players for Slovenia in the EUROS 2024:</p>
+<br>
+<div class="tables">
+<table>
+    <tr><th  colspan="6"><h3>Goalkeepers</h3></th></tr>
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Profile</th>
+        <th>Age</th>
+        <th>Matches played</th>
+        <th>Goals Conceded</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Jan Oblak</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/oblak.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>31</td>
+        <td>4</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Vid Belec</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Belec.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>34</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Igor Vekic</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/vekic.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>26</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+
+<br>
+<tr><th  colspan="6"><h3>Defenders</h3></th></tr>
+
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Profile</th>
+        <th>Age</th>
+        <th>Matches played</th>
+        <th>Goals Conceded</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Žan Karničnik</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Karničnik.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>29</td>
+        <td>4</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Jure Balkovec</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Balkovec.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>29</td>
+        <td>2</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Miha Blažič</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Blažič.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>31</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Jon Gorenc Stanković</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Stanković.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>28</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Jaka Bijol</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Bijol.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>25</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Erik Janža</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Janža.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>31</td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Petar Stojanović</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Stojanović.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>28</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>Vanja Drkušić</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Drkušić.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>24</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>David Brekalo</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Brekalo.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>25</td>
+        <td>2</td>
+        <td>-</td>
+    </tr>
+
+<br>
+<tr><th  colspan="6"><h3>Midfielders</h3></th></tr>
+
+    <tr>
+       <th>No</th>
+        <th>Name</th>
+        <th>Profile</th>
+        <th>Age</th>
+        <th>Matches played</th>
+        <th>Goals Conceded</th>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Benjamin Verbič</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Verbič.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>30</td>
+        <td>3</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Sandi Lovrić</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Lovrić.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>26</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Timi Elšnik</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Elšnik.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>26</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Jasmin Kurtić</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Kurtić.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>35</td>
+        <td>1</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Tomi Horvat</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Horvat.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>25</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>Adam Gnezda Čerin</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Čerin.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>25</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>Nino Žugelj</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Žugelj.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>24</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>Adrian Zeljković</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Zeljković.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>22</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>Josip Iličić</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Iličić.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>36</td>
+        <td>2</td>
+        <td>-</td>
+    </tr>
+
+<br>
+<tr><th  colspan="6"><h3>Forwards</h3></th>
+
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Profile</th>
+        <th>Age</th>
+        <th>Matches played</th>
+        <th>Goals Conceded</th>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Andraž Šporar</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Šporar.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>30</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Benjamin Šeško</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Šeško.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>21</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Jan Mlakar</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Mlakar.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>25</td>
+        <td>4</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Žan Vipotnik</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Vipotnik.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>22</td>
+        <td>1</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Žan Celar</td>
+        <td><div class="player-img"><img src="{{ url_for('static', filename='players/Celar.png') }}" alt="Player-img" style="width: 50px; height: auto;"></div></td>
+        <td>25</td>
+        <td>3</td>
+        <td>-</td>
+    </tr>
+</table>
+</div>
+<br>
+<center><h3 >Coach</h3>
+<div class="coach">
+    <img src="{{ url_for('static', filename='players/Kek.png') }}" alt="Player-img" style="width: 50px; height: auto;">
+    <p>Matjaž Kek</p>
+</div></center>
+{% endblock %}
